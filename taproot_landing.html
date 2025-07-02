@@ -393,6 +393,41 @@
             opacity: 1;
             transform: translateY(0);
         }
+
+        .careers {
+            padding: 100px 0;
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(10px);
+        }
+        .careers h2 {
+            text-align: center;
+            font-size: 3rem;
+            margin-bottom: 40px;
+            background: linear-gradient(45deg, #ffffff, #f7931a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .careers .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 40px;
+            margin-top: 40px;
+        }
+        .careers .feature-card {
+            background: rgba(255, 255, 255, 0.05);
+            padding: 40px 30px;
+            border-radius: 20px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+        .careers .feature-card:hover {
+            transform: translateY(-10px);
+            background: rgba(255, 255, 255, 0.08);
+            box-shadow: 0 20px 40px rgba(247, 147, 26, 0.1);
+        }
     </style>
 </head>
 <body>
@@ -532,7 +567,8 @@
                 <a href="#terms">Terms of Service</a>
                 <a href="#support">Support</a>
                 <a href="#docs">Documentation</a>
-                <a href="mailto:hello@taproot-marketplace.com">Contact</a>
+                <a href="mailto:jim@taprootmarketplace.com">Contact</a>
+                <a href="#careers">Careers</a>
             </div>
             
             <div class="copyright">
@@ -540,6 +576,27 @@
             </div>
         </div>
     </footer>
+
+    <section class="careers" id="careers">
+        <div class="container">
+            <h2>Careers at Taproot Marketplace</h2>
+            <p style="margin-bottom: 30px; opacity: 0.9;">We're building the future of digital commerce on Bitcoin and are looking for passionate people to join our founding team!</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <h3>Founding Engineer</h3>
+                    <p>Join as a founding engineer and help architect the future of Taproot Marketplace. We're looking for passionate builders with deep experience in Bitcoin, Lightning, and decentralized commerce. Email <a href="mailto:jim@taprootmarketplace.com">jim@taprootmarketplace.com</a> to connect.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>iOS / Full-Stack Engineer</h3>
+                    <p>We're seeking an engineer with experience in iOS (Swift) and full-stack development. If you love building seamless mobile and web experiences, and want to work with Lightning Network integrations, email <a href="mailto:jim@taprootmarketplace.com">jim@taprootmarketplace.com</a> to apply.</p>
+                </div>
+                <div class="feature-card">
+                    <h3>Backend / Security Engineer</h3>
+                    <p>We're hiring for backend and security engineers. If you have strong skills in building scalable, secure systems and want to work on Bitcoin and Lightning, reach out! Email <a href="mailto:jim@taprootmarketplace.com">jim@taprootmarketplace.com</a> to apply.</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <script>
         // Smooth scrolling for navigation links
